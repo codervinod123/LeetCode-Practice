@@ -23,7 +23,7 @@ class Solution{
            int r2=cut2==m?INT_MAX:arr2[cut2];
            
            if(l1<=r2 && l2<=r1) return max(l1,l2);
-           else if(l1>l2) high=cut1-1;
+           else if(l1>r2) high=cut1-1;
            else low=cut1+1;
        }
        return 1;
